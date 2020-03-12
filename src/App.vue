@@ -1,13 +1,22 @@
 <template>
   <div id="app">
-    <h1>Hello</h1>
+    <Navbar />
+    <div class="container">
+      <h1>Hello</h1>
+    </div>
   </div>
 </template>
 
 <script>
+import Navbar from "./components/Navbar"
+import firestore from "../firestore"
+
 export default {
   name: 'App',
-  components: {}
+  components: {Navbar},
+  created() {
+
+  }
 }
 </script>
 
